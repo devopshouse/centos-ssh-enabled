@@ -27,8 +27,8 @@ Clone the git repo
 ```
 git clone https://github.com/devopshouse/centos-ssh-enabled.git
 cd centos-ssh-enabled
-docker image build -t local-centos/ssh-enabled .
-docker run -d --name centos devopshouse/centos-ssh-enabled```
+docker image build -t centos-ssh-enabled .
+docker run -d --name centos centos-ssh-enabled
 ```
 
 Follow the same steps from before to get the container internal ip address
