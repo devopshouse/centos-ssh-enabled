@@ -5,7 +5,7 @@ LABEL version="1.0"
 LABEL description="SSH Enabled CentOS Image for Test and Dev purposes ONLY!"
 LABEL note="THIS IMAGE IS TO BE USED FOR TEST AND LEARNIGN PURPOSES ONLY! NOT TO BE USED IN A PRODUCTION ENVIRONMENT!"
 
-RUN yum update -y && yum install -y openssh-server && yum install -y net-tools
+RUN yum update -y && yum install -y openssh-server net-tools python3
 RUN mkdir /var/run/sshd
 RUN echo 'root:Passw0rd' | chpasswd
 
